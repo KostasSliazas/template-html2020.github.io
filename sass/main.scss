@@ -1,0 +1,365 @@
+@import "colors";
+
+$boxsha: 0 0 4px rgba(0, 0, 0, .3),
+0 0 0 1px $color2;
+$brdr: 2px;
+$font1: 'Kumbh Sans';
+$font2: 'Goldman';
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: none;
+  -webkit-text-size-adjust: 100%;
+  background: $color5;
+  height: 100%;
+  scrollbar-color: $color5 $color2;
+  scrollbar-width: thin;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  text-shadow: rgba(0, 0, 0, .05) 0 0 1px;
+  scroll-padding-top: 1.5em;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(0, 0, 0, 0) repeating-linear-gradient(135deg, $color5 0px, $color5 24px, $color6 25px, $color6 48px) repeat fixed 0% 0%;
+  color: $color3;
+  font: 16px/1.5 -apple-system, $font1, "Ubuntu", "Helvetica", sans-serif;
+  font-display: fallback;
+  margin: 0;
+  overflow-x: hidden;
+  letter-spacing: 0.025em;
+  word-spacing: 0.0625em;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  background: $color1;
+  box-shadow: $boxsha;
+  margin: 15em auto 1em;
+  max-width: 960px;
+  min-height: 300px;
+  position: relative;
+  border-radius: $brdr;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  padding: 1em;
+}
+
+#header {
+  border-top: 3em solid $color1;
+  background: $color6;
+  background: radial-gradient(circle, $color2, $color6);
+  clip-path: polygon(100% 0, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0 0);
+  font-family: $font2, 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 240px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#header a {
+  color: $color3;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  transform: translateY(-1.2em);
+  letter-spacing: 1ch;
+  height: 100%;
+}
+
+#header span {
+  display: block;
+  font-size: 2em;
+  line-height: 1;
+  text-shadow: $color6 -1px 1px 0px, $color6 -2px 2px 0px, rgb(228, 228, 228) -3px 5px 0px, rgb(228, 228, 228) -3px 7px 0px, rgb(228, 228, 228) -3px 10px 0px, rgb(228, 228, 228) -4px 11px 0px, rgb(228, 228, 228) -4px 14px 0px, rgb(228, 228, 228) -5px 15px 0px, rgb(228, 228, 228) -4px 17px 0px, rgb(228, 228, 228) -4px 19px 0px, rgb(228, 228, 228) -3px 22px 0px, rgb(228, 228, 228) -4px 23px 0px, rgb(228, 228, 228) -4px 24px 0px, rgb(228, 228, 228) -4px 26px 0px, rgb(228, 228, 228) -4px 28px 0px, rgb(228, 228, 228) -3px 30px 0px, rgb(228, 228, 228) -3px 31px 0px, rgb(228, 228, 228) -4px 32px 0px, rgb(228, 228, 228) -5px 33px 0px, rgb(228, 228, 228) -5px 36px 0px, rgb(228, 228, 228) -4px 37px 0px, rgb(228, 228, 228) -4px 40px 0px, rgb(228, 228, 228) -4px 43px 0px, rgb(228, 228, 228) -3px 44px 0px, rgb(228, 228, 228) -2px 46px 0px, rgb(228, 228, 228) -3px 47px 0px, rgb(228, 228, 228) -2px 49px 0px, rgb(228, 228, 228) -1px 50px 0px, rgb(228, 228, 228) 0px 52px 0px, rgb(228, 228, 228) 1px 54px 0px, rgb(228, 228, 228) 2px 55px 0px, rgb(228, 228, 228) 4px 57px 0px, rgb(228, 228, 228) 6px 60px 0px, rgb(228, 228, 228) 9px 63px 0px, rgb(228, 228, 228) 12px 65px 0px, rgb(228, 228, 228) 14px 67px 0px, rgb(228, 228, 228) 17px 70px 0px, rgb(228, 228, 228) 20px 72px 0px, rgb(228, 228, 228) 23px 73px 0px, rgb(228, 228, 228) 26px 74px 0px, rgb(228, 228, 228) 28px 77px 0px, rgb(228, 228, 228) 30px 78px 0px, rgb(228, 228, 228) 33px 81px 0px, rgb(228, 228, 228) 35px 83px 0px, rgb(228, 228, 228) 36px 86px 0px, rgb(228, 228, 228) 39px 87px 0px, rgb(228, 228, 228) 40px 90px 0px, rgb(228, 228, 228) 41px 93px 0px, rgb(228, 228, 228) 42px 95px 0px, rgb(228, 228, 228) 45px 97px 0px, rgb(228, 228, 228) 46px 98px 0px, rgb(228, 228, 228) 49px 100px 0px, rgb(228, 228, 228) 50px 103px 0px, rgb(228, 228, 228) 53px 104px 0px, rgb(228, 228, 228) 55px 107px 0px, rgb(228, 228, 228) 58px 110px 0px, rgb(228, 228, 228) 61px 112px 0px, rgb(228, 228, 228) 62px 113px 0px, rgb(228, 228, 228) 63px 115px 0px, rgb(228, 228, 228) 66px 118px 0px, rgb(228, 228, 228) 67px 121px 0px, rgb(228, 228, 228) 69px 123px 0px, rgb(228, 228, 228) 71px 124px 0px, rgb(228, 228, 228) 74px 127px 0px, rgb(228, 228, 228) 77px 130px 0px, rgb(228, 228, 228) 78px 133px 0px, rgb(228, 228, 228) 80px 135px 0px, rgb(228, 228, 228) 81px 138px 0px, rgb(228, 228, 228) 84px 141px 0px, rgba(228, 228, 228, 0.9) 85px 142px 0px, rgba(228, 228, 228, 0.8) 87px 145px 0px, rgba(228, 228, 228, 0.7) 89px 148px 0px, rgba(228, 228, 228, 0.6) 90px 149px 0px, rgba(228, 228, 228, 0.5) 91px 150px 0px, rgba(228, 228, 228, 0.4) 93px 152px 0px, rgba(228, 228, 228, 0.3) 94px 155px 0px, rgba(228, 228, 228, 0.2) 97px 158px 0px;
+  user-select: none;
+}
+
+#logo {
+  background: url(../img/logo.svg) top/contain no-repeat;
+  filter: drop-shadow(0 0 10px #fff);
+  height: 100%;
+}
+
+#canvas {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.box {
+  box-shadow: 0 0 0 1px $color5, 0 0 5px 1px $color2;
+  border-radius: $brdr;
+  padding: 1em 1em 0 1em;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  p {
+    padding-bottom: 1em;
+  }
+}
+
+.bg1 {
+  background-image: url(../img/img1.svg);
+}
+.bg2 {
+  background-image: url(../img/img2.svg);
+}
+
+.bg3 {
+  background-image: url(../img/img3.svg);
+}
+.bg4 {
+  background-image: url(../img/img4.svg);
+}
+.bg5 {
+  background-image: url(../img/img5.svg);
+}
+.bg6 {
+  background-image: url(../img/img6.svg);
+  background-color: rgba(129, 94, 94, 0.281);
+}
+#menu {
+  background: $color1;
+  border-radius: 0 0 0 50%;
+  box-shadow: $boxsha;
+  clip-path: polygon(100% 0, 100% 100%, 40% 100%, 0 60%, 0 0);
+  cursor: pointer;
+  height: 47px;
+  max-width: 230px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 47px;
+  z-index: 9998;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 14px;
+    transition: 0.2s all, 0.1s 0.1s border-top;
+    width: 20px;
+  }
+
+  &::after {
+    border-bottom: 2px solid $color0;
+    border-top: 2px solid $color0;
+    height: 4px;
+    top: 23px;
+  }
+
+  &::before {
+    -webkit-transform-origin: 3px 4px;
+    border-top: 2px solid $color0;
+    top: 17px;
+    transform-origin: 3px 4px;
+  }
+
+  &.act {
+    &::after {
+      -webkit-transform: rotate(-45deg);
+      border-top: 0;
+      height: 0;
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    +.nav {
+      margin: 0;
+    }
+  }
+}
+
+.nav {
+  backface-visibility: hidden;
+  background: $color1;
+  box-shadow: $boxsha;
+  direction: rtl;
+  display: block;
+  height: 100%;
+  line-height: 3em;
+  margin-right: -101%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  position: fixed;
+  right: 0;
+  scroll-padding-top: 48px;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin;
+  top: 0;
+  transform: translateZ(0);
+  transition: .2s margin-right cubic-bezier(1, 0, 0, 1);
+  z-index: 9997;
+  padding: 0 2px;
+  box-sizing: border-box;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 48px 0;
+
+    li {
+      a {
+        box-sizing: border-box;
+        color: $color0;
+        direction: ltr;
+        display: block;
+        font-family: $font2, sans-serif;
+        font-size: 13px;
+        line-height: inherit;
+        min-width: 200px;
+        overflow: hidden;
+        padding: 0 1em;
+        scroll-snap-align: start;
+        text-align: left;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        white-space: nowrap;
+        box-shadow: 0 0 0 1px $color2 inset, 0 0 0 1px $color5;
+        border-radius: $brdr;
+
+        &::first-letter {
+          font-weight: 700;
+        }
+
+        &:hover {
+          background: $color6;
+        }
+      }
+
+    }
+
+    &:not(a) {
+      font-size: 0;
+    }
+  }
+}
+
+footer {
+  background: $color5;
+  min-height: 6em;
+  text-align: center;
+  color: $color3;
+  position: relative;
+  padding: 3em 0;
+  font-size: 0.75em;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: $color2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color5;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: $color2;
+}
+
+h1,
+.h1 {
+  font-size: 1.9375em;
+  line-height: 1.5483871em;
+  margin: 0;
+  text-align: center;
+}
+
+h2,
+.h2 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  margin: 0;
+}
+
+h3,
+.h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0em;
+}
+
+h4,
+.h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+h5,
+.h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+}
+
+td,
+th {
+  box-shadow: 0 0 1px $color3;
+  padding: 0;
+  padding: 0 4px;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+@media only screen and (min-width: 600px) {
+  article {
+    width: 600px / 960px * 100%;
+  }
+
+  aside {
+    width: 360px / 960px * 100%;
+  }
+}
